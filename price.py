@@ -38,11 +38,11 @@ def send_mail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('jp.s.gog@gmail.com','qzvityzjmtdqsxrt')
+    server.login('someone@some.com','AccessKey generated')
     msg = MIMEMultipart('alternative')
     msg['Subject'] = "Price Drop from Python"
-    msg['From'] = 'jp.s.gog@gmail.com'
-    msg['To'] = 'jeyaprakashsenguttuvan@gmail.com'
+    msg['From'] = 'someone@some.com'
+    msg['To'] = 'someone@some.com'
 
     text = "You Have been notified of the following product price drop"
     html = """\
